@@ -8,8 +8,8 @@
 # Site settings
 title: TechArq
 description: "This blog focuses on the research aspects of tech industries by sharing informative articles and interviews with industry leaders."
-baseurl: "/jekyll-for-designers"
-url: "http://gasparlg.github.io/jekyll-for-designers"
+baseurl: "/jekyll-test-one"
+url: "http://gasparlg.github.io/jekyll-test-one"
 tagline: "Connect & Research"
 
 
