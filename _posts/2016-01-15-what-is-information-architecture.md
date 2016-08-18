@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post 
 title:  "What is Information Architecture?"
 date:   2016-01-15
 tags: [information architecture]
