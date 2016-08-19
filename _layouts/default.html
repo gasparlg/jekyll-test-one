@@ -1,4 +1,4 @@
-<!doctype html>
+<!doctype html> 
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang=""> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" lang=""> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" lang=""> <![endif]-->
@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="{{site.baseurl}}/css/main.css">
   <link href='http://fonts.googleapis.com/css?family=Oswald:400,700' rel='stylesheet' type='text/css'>
   <link href='http://fonts.googleapis.com/css?family=Roboto+Slab' rel='stylesheet' type='text/css'>
-  <script src="{{site.baseurl}}/scripts/modernizr.custom.js"></script>
+  <!-- <script src="{{site.baseurl}}/scripts/modernizr.custom.js"></script> -->
   <!--[if lt IE 9]>
     <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
@@ -40,5 +40,14 @@
     {% else %}
       {% include footer.html %}
     {% endif %}
+    
+    <!-- Scripts -->
+        <script src="{{site.baseurl}}/js/jquery.min.js"></script>
+        <script src="{{site.baseurl}}/js/jquery.scrolly.min.js"></script>
+        <script src="{{site.baseurl}}/js/jquery.scrollex.min.js"></script>
+        <script src="{{site.baseurl}}/js/skel.min.js"></script>
+        <script src="{{site.baseurl}}/js/util.js"></script>
+        <!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
+        <script src="{{site.baseurl}}/js/main.js"></script>
 </body>
 </html>
