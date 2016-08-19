@@ -13,7 +13,7 @@ layout:  default
     
 {% for post in paginator.posts %}
  <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
-        <a href="{{post.url}}" class="imagep"><img src="{{site.baseurl}}/{{post.img}}" alt="" /></a>
+        <!-- <a href="{{post.url}}" class="imagep"><img src="{{site.baseurl}}/{{post.img}}" alt="" /></a> -->
         <header>
             <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
                 {{post.title}}</a></h2>
