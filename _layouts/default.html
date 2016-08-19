@@ -22,6 +22,8 @@
             <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
     <body>
+        <div class="mainpage">
+        <div id="wrapper" class="mainpage"> <!-- from index -->
         
         <!-- Header --> <!-- from index -->
         <header id="header" class="alt">
@@ -30,7 +32,32 @@
                 <a href="#menu">&nbsp;Menu</a>
             </nav>
         </header>
+            <!-- Menu -->
+        <nav id="menu">
+            <ul class="links">
+                <li><a href="{{site.baseurl}}/index.html">Home</a></li>
+                <li><a href="{{site.baseurl}}/tags/index.html">Archive</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="elements.html">English</a></li>
+                <li><a href="elements.html">Español</a></li>
+            </ul>
+            <ul class="actions vertical">
+                <li><a href="#" class="button special fit">Get the Newsletter</a></li>
+            </ul>
+        </nav>
+        <!-- Banner -->
+        <section id="banner" class="major">
+            <div class="inner">
+                <header class="major">
+                    <h1><a href="{{site.baseurl}}/index.html">Altman <span id="amp">&amp;</span> Berg</a></h1>
+                </header>
+                <div class="content">
+                    <p>{{site.tagline}}</p>
+                </div>
+            </div>
+        </section>
         
+        <!--
         <header role="banner" class="page-header" id="top">
             <h1><a href="{{site.baseurl}}/index.html">{{site.title}}</a></h1>
             <p>{{site.tagline}}</p>
@@ -45,8 +72,7 @@
                 </ul>
             </nav>
         </header>
-            <div class="mainpage">
-            <div id="wrapper" class="mainpage"> <!-- from index -->
+        -->
             {{content}}
             {% if page.id %}
               {% include footer-post.html %}
