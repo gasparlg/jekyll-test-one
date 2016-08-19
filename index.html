@@ -17,10 +17,10 @@ layout:  default
         <header>
             <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
                 {{post.title}}</a></h2>
-            <ul class="meta">
-            <li><time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date:"%B %-d, %Y"}}</time></li>
+            
+            <time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date:"%B %-d, %Y"}}</time>
             <!--<li>{{post.min}} min read</li> -->
-            </ul>
+            
         </header>
         <p><a href="{{site.baseurl}}{{post.url}}">{{post.excerpt | strip_html}}</a></p>
         <footer>
