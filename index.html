@@ -19,7 +19,7 @@ layout:  default
                 {{post.title}}</a></h2>
             <ul class="meta">
             <li><time itemprop="dateCreated" datetime="{{post.date}}">{{post.date | date:"%B %-d, %Y"}}</time></li>
-            <li>{{post.min}} min read</li>
+            <!--<li>{{post.min}} min read</li> -->
             </ul>
         </header>
         <p><a href="{{site.baseurl}}{{post.url}}">{{post.excerpt | strip_html}}</a></p>
