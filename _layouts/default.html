@@ -22,6 +22,15 @@
             <script>try{Typekit.load({ async: true });}catch(e){}</script>
     </head>
     <body>
+        
+        <!-- Header --> <!-- from index -->
+        <header id="header" class="alt">
+            <a href="{{site.baseurl}}/index.html" class="logo"><strong></strong><span>Altman <span id="amp">&amp;</span> Berg</span></a>
+            <nav>
+                <a href="#menu">&nbsp;Menu</a>
+            </nav>
+        </header>
+        
         <header role="banner" class="page-header" id="top">
             <h1><a href="{{site.baseurl}}/index.html">{{site.title}}</a></h1>
             <p>{{site.tagline}}</p>
@@ -37,12 +46,14 @@
             </nav>
         </header>
             <div class="mainpage">
+            <div id="wrapper" class="mainpage"> <!-- from index -->
             {{content}}
             {% if page.id %}
               {% include footer-post.html %}
             {% else %}
               {% include footer.html %}
             {% endif %}
+            </div>
             </div>
             <!-- Scripts -->
             <script src="{{site.baseurl}}/js/jquery.min.js"></script>
