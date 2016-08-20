@@ -21,27 +21,41 @@ layout:  default
             </ul>
         </header>
         <p><a href="{{site.baseurl}}{{post.url}}" title="read more" class="more">{{post.excerpt | strip_html}}</a></p>
-        <footer>
-        <!-- <p>Posted in {% for tag in post.tags %}<a href="{{site.baseurl}}/tags/index.html#{{ tag | cgi_escape}}" title="posts tagged" rel="tag">{{tag}}</a>{% unless forloop.last %},{% endunless %} {% endfor %}</p> -->
-     </footer>
+        <!-- <footer>
+        <p>Posted in {% for tag in post.tags %}<a href="{{site.baseurl}}/tags/index.html#{{ tag | cgi_escape}}" title="posts tagged" rel="tag">{{tag}}</a>{% unless forloop.last %},{% endunless %} {% endfor %}</p> 
+     </footer> -->
     </article>
     {% endfor %}
                              
     </div>
     </section>
     </div>
-                
-        <div class="pagination">
+           
+    
+        <div id="main">
+        <section id="two">
+        <div class="inner">
+        <footer class="major">
+        <ul class="pagination">
+                        
             {% if paginator.previous_page %}
             {% if paginator.previous_page == 1 %}
-            <p class="prevLink"><a href="{{site.baseurl}}/" class="previous">newer entries</a></p>
+            <p class="prevLink"><a href="{{site.baseurl}}/" class="previous">Previous Articles</a></p>
             {% else %}
-            <p class="prevLink"><a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous">newer entries</a></p>
+            <p class="prevLink"><a href="{{site.baseurl}}/blog/page{{paginator.previous_page}}" class="previous">Previous Articles</a></p>
             {% endif %}
             {% endif %}
             {% if paginator.next_page %}
-            <p class="nextLink"><a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">older entries</a></p>
+            <p class="nextLink"><a href="{{site.baseurl}}/blog/page{{paginator.next_page}}" class="next">Next Articles</a></p>
             {% endif %}
-    </div>
+    
+        </ul>
+        </footer>
+        </div>                      
+        </section>
+        </div>
+    
+    
+    
     </article>
 </main>
