@@ -56,10 +56,10 @@ page-type: post
                 <section class="post-links" class="textmargin">
                 <p>Read more:</p>
               {% if page.previous.url %}
-                <p class="prevLink"><a class="previous" href="{{page.previous.url}}">{{page.previous.title}}</a></p>
+                <p class="prevLink"><a class="previous" href="{{site.baseurl}}{{page.previous.url}}">{{page.previous.title}}</a></p>
               {% endif %}
               {% if page.next.url %}
-                <p class="nextLink"><a class="next" href="{{page.next.url}}">{{page.next.title}}</a></p>
+                <p class="nextLink"><a class="next" href="{{site.baseurl}}{{page.next.url}}">{{page.next.title}}</a></p>
               {% endif %}
                 </section>
                 </footer>
