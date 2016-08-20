@@ -1,8 +1,128 @@
 --- 
-layout: default
+layout: default-post
 page-type: post
 ---
-<main role="main" class="cf">
+<div id="wrapper" class="articlepage">
+    
+    <!-- Header -->
+            <header id="header">
+                <a href="{{site.baseurl}}index.html" class="logo"><span>Altman &amp; Berg</span></a>
+                <nav>
+                    <a href="#menu">&nbsp;Menu</a>
+                </nav>
+            </header>
+    
+    <!-- Menu -->
+            <nav id="menu">
+                <ul class="links">
+                    <li><a href="{{site.baseurl}}index.html">Home</a></li>
+                    <li><a href="{{site.baseurl}}tags/index.html">Archive</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <li><a href="elements.html">English</a></li>
+                    <li><a href="elements.html">Español</a></li>
+                </ul>
+                <ul class="actions vertical">
+                    <li><a href="#" class="button special fit">Get the Newsletter</a></li>
+                </ul>
+            </nav>
+    
+    <!-- Main -->
+    <div id="main" class="alt">
+        <section id="one">
+            <div class="inner">
+                <div class="textmargin">
+                    <header class="major">
+                        <h1>{{page.title}}</h1>
+                        <time itemprop="dateCreated" datetime="{{page.date}}">
+                            {{ page.date | date: "%B %-d, %Y" }}</time>
+                    </header>
+                </div>
+                {% if page.img %}
+                    <span class="image main" >
+                        <img src="{{ page.img }}" alt="" />
+                    </span>
+                {% endif %}
+                <div class="textmargin" id="articletext">
+                    {{content}}
+                </div>    
+                
+                
+                
+                
+                <footer class="textmargin" >
+                <p>Posted in {% for tag in page.tags %}<a href="{{site.baseurl}}tags/index.html#{{ tag | cgi_escape }}" title="Pages tagged {{ tag }}" rel="tag">{{ tag }}</a>{% unless forloop.last %}, {% endunless %}{% endfor %}</p>
+                
+                
+                <section class="post-links" class="textmargin">
+                <p>Read more:</p>
+              {% if page.previous.url %}
+                <p class="prevLink"><a class="previous" href="{{page.previous.url}}">{{page.previous.title}}</a></p>
+              {% endif %}
+              {% if page.next.url %}
+                <p class="nextLink"><a class="next" href="{{page.next.url}}">{{page.next.title}}</a></p>
+              {% endif %}
+                </section>
+                </footer>
+                
+                </div>
+            </section>
+        </div>
+    
+    
+    
+    
+    
+    
+    <!-- Footer -->
+                <footer id="footer">
+                    <div class="inner">
+                        <section>
+                            <h2><a name="contact">Connect with Altman &amp; Berg</a></h2>
+                            <p>Ipsum dolor sit amet tempus adipiscing amet sed aliquam magna etiam magna feugiat cursus lorem nisi. Amet mauris vitae mi dapibus nulla dictum. Ipsum dolor sit amet tempus etiam adipiscing amet sed aliquam veroeros etiam feugiat veroeros aliquam feugiat cursus lorem nisi. Ut mauris vitae mi dapibus nulla dictum. Ipsum dolor sit amet tempus adipiscing tempus.</p>
+                            <ul class="icons style2">
+                                <li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
+                                <li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
+                                <li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
+                                <li><a href="#" class="icon fa-youtube"><span class="label">YouTube</span></a></li>
+                            </ul>
+                        </section>
+
+
+                        <section>
+                            <form method="post" action="#">
+                                <div class="field half first">
+                                    <input type="text" name="name" id="name" placeholder="Name" />
+                                </div>
+                                <div class="field half">
+                                    <input type="email" name="email" id="email" placeholder="Email" />
+                                </div>
+                                <div class="field">
+                                    <textarea name="message" id="message" placeholder="Message" rows="4"></textarea>
+                                </div>
+                                <ul class="actions">
+                                    <li><input type="submit" value="Send Message" /></li>
+                                </ul>
+                            </form>
+                        </section>
+                    </div>
+                    <div class="copyright">
+                        <p>&copy; 2016 {{site.title}}</p>
+                    </div>
+                </footer>
+    
+    
+    
+    
+
+
+    </div>
+
+
+       
+        
+
+<!-- <main role="main" class="cf"> -->
+<!--
 <article class="posts">
  <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
         <header>
@@ -25,4 +145,5 @@ page-type: post
   {% endif %}
 	</section>
     </article>
-</main>
+-->
+<!-- </main>  -->
