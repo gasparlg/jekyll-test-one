@@ -10,7 +10,7 @@ title: TechArq
 description: "This blog focuses on the research aspects of tech industries by sharing informative articles and interviews with industry leaders."
 baseurl: "/jekyll-test-one"
 url: "http://gasparlg.github.io/jekyll-test-one"
-tagline: "Connect & Research"
+tagline: "Wine Market Insight"
 
 
 # Build settings
@@ -18,6 +18,6 @@ markdown: kramdown
 kramdown:
     auto_ids: false
 gems: [jekyll-paginate]
-paginate: 4
+paginate: 6
 paginate_path: '/blog/page:num/'
 permalink: /:title
