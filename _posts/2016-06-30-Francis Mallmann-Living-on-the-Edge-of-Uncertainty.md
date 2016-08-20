@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: default-post
 title:  "Francis Mallmann ‘Living on the Edge of Uncertainty’"
 date:   2016-06-30
 tags: [Argentina]
