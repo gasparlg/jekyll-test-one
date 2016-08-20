@@ -3,6 +3,11 @@ layout:  default
 ---
 <main role="main" class="cf">
 <article class="posts">
+    
+    <div id="main">                
+        <section class="main">
+            <div class="posts">
+    
 {% for post in paginator.posts %}
     <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
         <header>
@@ -17,6 +22,12 @@ layout:  default
      </footer>
     </article>
     {% endfor %}
+                
+                
+                </div>
+        </section>
+    </div>
+                
         <div class="pagination">
             {% if paginator.previous_page %}
             {% if paginator.previous_page == 1 %}
