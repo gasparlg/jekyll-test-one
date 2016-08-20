@@ -6,7 +6,7 @@ tags: [UK]
 excerpt: "In the case of Brexit being victorious tomorrow, the economic status quo that the UK has maintained for quite some time will change, and along changes there are misfortunes and opportunities." 
 <!-- img: images/francis33.jpg -->
 img: images/UK_EU_Flags_2.jpg
-min: 5
+minread: 5
 lang: en
 ---
 

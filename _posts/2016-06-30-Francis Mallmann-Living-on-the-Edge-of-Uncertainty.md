@@ -4,7 +4,7 @@ title:  "Francis Mallmann ‘Living on the Edge of Uncertainty’"
 date:   2016-06-30
 tags: [Argentina]
 img: images/francis33333.jpg
-min: 4
+minread: 4
 lang: es
 excerpt: "It has been more than 40 years since Francis Mallmann, internationally renowned chef, opened his first restaurant. Today he is recognized by many of his colleagues as the best Argentine chef, and among the top chefs in the world." 
 ---

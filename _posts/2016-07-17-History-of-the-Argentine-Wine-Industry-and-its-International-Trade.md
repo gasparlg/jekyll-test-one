@@ -6,7 +6,7 @@ tags: [Argentina]
 excerpt: "After such a special time as the bicentennial of the Declaration of Independence of Argentina, it is a great opportunity to remember the well-trodden paths of the Argentine wine industry."
 <!-- img: images/francis33.jpg -->
 img: images/Publicidad-2-Vino-Panquegua.jpg 
-min: 5
+minread: 5
 lang: es
 ---
 

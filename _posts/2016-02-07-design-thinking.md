@@ -5,7 +5,7 @@ date:   2016-02-07
 tags: [research]
 <!-- img: images/francis33.jpg -->
 img: images/vineyard_goodC2_2.jpg
-min: 3
+minread: 3
 ---
 
 Design Thinking is a term that is often heard in academics environments, but its also what its behind products like the iPod and iPad. It is an iterative process for creating new and relevant solutions or new opportunities through a human-driven analysis. 
