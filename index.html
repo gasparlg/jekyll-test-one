@@ -10,13 +10,14 @@ layout:  default
     
 {% for post in paginator.posts %}
     <article role="article" itemscope itemtype="http://schema.org/BlogPosting">
-        <a href="{{post.url}}" class="imagep"><img src="{{site.baseurl}}/{{post.img}}"></a>
+        <a href="{{site.baseurl}}{{post.url}}" class="imagep"><img src="{{site.baseurl}}/{{post.img}}"></a>
         <header>
             <h2><a href="{{site.baseurl}}{{post.url}}" rel="bookmark" title="Permanent Link to {{site.baseurl}}{{post.url}}">
                 {{post.title}}</a></h2>
             <ul class="meta">
             <li><time itemprop="dateCreated" datetime="{{post.date}}">
                 {{post.date | date:"%B %-d, %Y"}}</time></li>
+            <li>min read</li>
             </ul>
         </header>
         <p>{{post.excerpt | strip_html}} <a href="{{site.baseurl}}{{post.url}}" title="read more" class="more">Read More</a></p>
